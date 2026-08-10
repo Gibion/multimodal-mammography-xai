@@ -1,0 +1,80 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# macOS
+.DS_Store
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# Raw / downloaded data
+data/raw/**
+!data/raw/.gitkeep
+
+# Large generated image data
+data/processed/cbis_ddsm/full_mammograms/**
+data/processed/cbis_ddsm/cropped/**
+data/processed/cbis_ddsm/roi_masks/**
+
+# Keep manifest CSV files if desired
+!data/processed/cbis_ddsm/manifests/
+!data/processed/cbis_ddsm/manifests/*.csv
+
+# Interim generated files
+data/interim/**
+!data/interim/.gitkeep
+
+# TCIA downloader/archive files
+**/TCIA_Data_Retriever*
+*.tcia
+*.zip
+
+# Model artifacts
+models/**/*.h5
+models/**/*.keras
+models/**/*.ckpt
+models/**/*.pth
+models/**/*.pt
+models/**/*.onnx
+models/**/*.pb
+
+# Logs and experiment trackers
+logs/
+runs/
+wandb/
+tensorboard/
+
+# Generated reports / temporary output
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Temporary files
+*.tmp
+*.bak
+*~
