@@ -204,11 +204,31 @@ augmentation = tf.keras.Sequential(
     name="training_augmentation",
 )
 
+augmentation.build(
+    (None, IMAGE_SIZE, IMAGE_SIZE, 3)
+)
 
 def augment_image(image, label):
+    """
+    Apply augmentation using an explicit batch dimension.
+
+    The augmentation model therefore always receives input with
+    shape (batch, height, width, channels).
+    """
+
+    image = tf.expand_dims(
+        image,
+        axis=0
+    )
+
     image = augmentation(
         image,
         training=True
+    )
+
+    image = tf.squeeze(
+        image,
+        axis=0
     )
 
     image = tf.clip_by_value(
@@ -218,7 +238,6 @@ def augment_image(image, label):
     )
 
     return image, label
-
 
 def resnet_preprocess(image, label):
     image = (
