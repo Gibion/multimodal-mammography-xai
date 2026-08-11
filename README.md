@@ -183,10 +183,13 @@ data/processed/cbis_ddsm/manifests/
 
 ## Environment setup
 
+Python 3.12 is recommended. The tested machine-learning environment
+uses TensorFlow 2.16.2 and NumPy 1.26.4.
+
 Create and activate a virtual environment:
 
 ```bash
-python -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
 ```
 
