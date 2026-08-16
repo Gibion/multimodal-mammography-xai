@@ -1,0 +1,69 @@
+{
+  "model": "models/resnet50v2_baseline/best_model.keras",
+  "threshold_selection": {
+    "method": "max_validation_f1",
+    "default_threshold": 0.5,
+    "selected_threshold": 0.20700000000000002,
+    "best_validation_f1": 0.6528497409326425
+  },
+  "validation": {
+    "threshold_0_5": {
+      "threshold": 0.5,
+      "accuracy": 0.6337719298245614,
+      "roc_auc": 0.6715442395863818,
+      "average_precision": 0.626892808774267,
+      "precision": 0.6180555555555556,
+      "recall_sensitivity": 0.4427860696517413,
+      "specificity": 0.7843137254901961,
+      "f1": 0.5159420289855072,
+      "tn": 200,
+      "fp": 55,
+      "fn": 112,
+      "tp": 89
+    },
+    "selected_threshold": {
+      "threshold": 0.20700000000000002,
+      "accuracy": 0.5592105263157895,
+      "roc_auc": 0.6715442395863818,
+      "average_precision": 0.626892808774267,
+      "precision": 0.5,
+      "recall_sensitivity": 0.9402985074626866,
+      "specificity": 0.25882352941176473,
+      "f1": 0.6528497409326425,
+      "tn": 66,
+      "fp": 189,
+      "fn": 12,
+      "tp": 189
+    }
+  },
+  "test": {
+    "threshold_0_5": {
+      "threshold": 0.5,
+      "accuracy": 0.5903083700440529,
+      "roc_auc": 0.6516275114697041,
+      "average_precision": 0.550699806672191,
+      "precision": 0.5367647058823529,
+      "recall_sensitivity": 0.37244897959183676,
+      "specificity": 0.7558139534883721,
+      "f1": 0.4397590361445783,
+      "tn": 195,
+      "fp": 63,
+      "fn": 123,
+      "tp": 73
+    },
+    "selected_threshold": {
+      "threshold": 0.20700000000000002,
+      "accuracy": 0.579295154185022,
+      "roc_auc": 0.6516275114697041,
+      "average_precision": 0.550699806672191,
+      "precision": 0.5070028011204482,
+      "recall_sensitivity": 0.923469387755102,
+      "specificity": 0.3178294573643411,
+      "f1": 0.6546112115732369,
+      "tn": 82,
+      "fp": 176,
+      "fn": 15,
+      "tp": 181
+    }
+  }
+}

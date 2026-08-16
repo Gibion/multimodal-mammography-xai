@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\caption{Grad-CAM localisation results overall and by subgroup. Median values are reported for the highly skewed continuous localisation measures.}
+\label{tab:gradcam-subgroup-results}
+\small
+\begin{tabular}{llrrrrr}
+\hline
+Group type & Group & $N$ & PG (\%) & Median $E_{\mathrm{ROI}}$ (\%) & Median $R_{\mathrm{activation}}$ & Median IoU$_{10}$ (\%) \\
+\hline
+Overall & All Test Mammograms & 414 & 3.9 & 0.056 & 0.278 & 0.000 \\
+\hline
+Outcome & Tp & 110 & 8.2 & 0.424 & 2.172 & 0.903 \\
+Outcome & Tn & 160 & 1.2 & 0.005 & 0.032 & 0.000 \\
+Outcome & Fp & 77 & 3.9 & 0.135 & 0.613 & 0.000 \\
+Outcome & Fn & 67 & 3.0 & 0.026 & 0.046 & 0.000 \\
+\hline
+Lesion Group & Mass & 241 & 3.7 & 0.067 & 0.360 & 0.000 \\
+Lesion Group & Calcification & 173 & 4.0 & 0.048 & 0.172 & 0.000 \\
+\hline
+Roi Size Group & Small & 104 & 0.0 & 0.006 & 0.075 & 0.000 \\
+Roi Size Group & Medium & 206 & 1.9 & 0.042 & 0.164 & 0.000 \\
+Roi Size Group & Large & 104 & 11.5 & 0.978 & 1.168 & 0.957 \\
+\hline
+\end{tabular}
+\end{table}

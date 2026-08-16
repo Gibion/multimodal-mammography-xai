@@ -1,0 +1,15 @@
+{
+  "sample_cases": 16,
+  "small_denominator_threshold": 0.1,
+  "very_small_denominator_threshold": 0.05,
+  "cases_with_abs_prediction_minus_baseline_lt_0_10": 3,
+  "cases_with_abs_prediction_minus_baseline_lt_0_05": 1,
+  "correlation_abs_prediction_difference_vs_relative_error_200": -0.6865711228911809,
+  "correlation_abs_prediction_difference_vs_relative_error_400": -0.5823784385066457,
+  "cases_with_lower_absolute_error_at_400": 11,
+  "cases_with_lower_relative_error_at_400": 11,
+  "median_absolute_error_reduction_200_to_400": 0.0160177797079086,
+  "median_relative_error_reduction_200_to_400": 0.08676625498024176,
+  "median_map_correlation_200_vs_400": 0.9998512799706796,
+  "median_map_mae_200_vs_400": 0.00012776899893645
+}

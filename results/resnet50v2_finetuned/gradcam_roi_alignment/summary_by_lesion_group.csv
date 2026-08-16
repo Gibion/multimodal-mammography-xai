@@ -1,0 +1,5 @@
+,pointing_game_hit,pointing_game_hit,pointing_game_hit,energy_inside_roi,energy_inside_roi,energy_inside_roi,inside_outside_ratio,inside_outside_ratio,inside_outside_ratio,iou_top_10_percent,iou_top_10_percent,iou_top_10_percent,iou_top_20_percent,iou_top_20_percent,iou_top_20_percent,iou_top_30_percent,iou_top_30_percent,iou_top_30_percent
+,count,mean,median,count,mean,median,count,mean,median,count,mean,median,count,mean,median,count,mean,median
+lesion_group,,,,,,,,,,,,,,,,,,
+calcification,173,0.04046242774566474,0.0,173,0.018392875327875625,0.0004798737492047929,173,1.5069029385425816,0.17190088238076415,173,0.019412704814472423,0.0,173,0.014391130256738716,0.0,173,0.010889015155098103,0.0007373693712019121
+mass,241,0.03734439834024896,0.0,241,0.014256203144265657,0.0006720938760347578,241,2.9724950916171538,0.3601278868210685,241,0.013455765591160677,0.0,241,0.008478878331851339,0.000207782395164337,241,0.006156141138400103,0.0011100879240094356

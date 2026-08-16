@@ -1,0 +1,7 @@
+#!/Users/gibionmakiwa/MyDocuments/610MtSundanceBayW/University_of_London_Computer_Science_BSc/CM3070_Computer_Science_Final_Project/multimodal-mammography-xai/radiomics_venv/bin/python
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(main())

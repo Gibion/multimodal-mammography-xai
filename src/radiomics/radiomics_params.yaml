@@ -1,0 +1,17 @@
+imageType:
+  Original: {}
+
+featureClass:
+  firstorder: []
+  shape2D: []
+  glcm: []
+  glrlm: []
+  glszm: []
+  gldm: []
+  ngtdm: []
+
+setting:
+  force2D: true
+  normalize: true
+  normalizeScale: 100
+  binWidth: 2

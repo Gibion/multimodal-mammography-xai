@@ -1,0 +1,16 @@
+{
+  "analysis_unit_primary": "full_mammogram_union_roi",
+  "number_of_test_mammograms_with_roi": 414,
+  "pointing_game_accuracy": 0.03864734299516908,
+  "mean_energy_inside_roi": 0.01598481253500122,
+  "median_energy_inside_roi": 0.0005589631654768832,
+  "mean_inside_outside_ratio": 2.3600616556705334,
+  "median_inside_outside_ratio": 0.27831144506986194,
+  "mean_iou_top_10_percent": 0.015945017971916553,
+  "mean_iou_top_20_percent": 0.010949457034763214,
+  "mean_iou_top_30_percent": 0.008133888010112068,
+  "roi_size_quartiles": {
+    "q1": 0.0013637542724609375,
+    "q3": 0.0048923492431640625
+  }
+}

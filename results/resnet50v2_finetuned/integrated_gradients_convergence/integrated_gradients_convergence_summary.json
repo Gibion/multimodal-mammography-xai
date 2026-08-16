@@ -1,0 +1,77 @@
+{
+  "sample_size": 16,
+  "samples_per_outcome": 4,
+  "step_counts": [
+    25,
+    50,
+    100,
+    200,
+    400
+  ],
+  "reference_steps": 400,
+  "integration_batch_size": 20,
+  "baseline_value_model_input_space": -1.0,
+  "elapsed_seconds": 31997.63710784912,
+  "summary": [
+    {
+      "integration_steps": 25,
+      "n": 16,
+      "mean_abs_completeness_error": 0.34419699758291245,
+      "median_abs_completeness_error": 0.35766150057315826,
+      "mean_relative_completeness_error": 2.667918077429939,
+      "median_relative_completeness_error": 1.0940480551372072,
+      "mean_map_correlation_vs_400": 0.9890483037927016,
+      "median_map_correlation_vs_400": 0.9915412065299715,
+      "mean_map_mae_vs_400": 0.0010435791155032348,
+      "median_map_mae_vs_400": 0.0009556861477904022
+    },
+    {
+      "integration_steps": 50,
+      "n": 16,
+      "mean_abs_completeness_error": 0.20498285116627812,
+      "median_abs_completeness_error": 0.22100605815649033,
+      "mean_relative_completeness_error": 2.1073975760808836,
+      "median_relative_completeness_error": 0.8404768270668439,
+      "mean_map_correlation_vs_400": 0.9962695200559885,
+      "median_map_correlation_vs_400": 0.9966744621445123,
+      "mean_map_mae_vs_400": 0.0006315106602414744,
+      "median_map_mae_vs_400": 0.0005512326606549323
+    },
+    {
+      "integration_steps": 100,
+      "n": 16,
+      "mean_abs_completeness_error": 0.13778910506516695,
+      "median_abs_completeness_error": 0.1250922717154026,
+      "mean_relative_completeness_error": 1.1383774141387266,
+      "median_relative_completeness_error": 0.4872976958506662,
+      "mean_map_correlation_vs_400": 0.9990487210997547,
+      "median_map_correlation_vs_400": 0.9991955862717469,
+      "mean_map_mae_vs_400": 0.0002914952037826879,
+      "median_map_mae_vs_400": 0.0002912199997808784
+    },
+    {
+      "integration_steps": 200,
+      "n": 16,
+      "mean_abs_completeness_error": 0.07574096508324146,
+      "median_abs_completeness_error": 0.05414900928735733,
+      "mean_relative_completeness_error": 0.6603323529842966,
+      "median_relative_completeness_error": 0.26507278427812453,
+      "mean_map_correlation_vs_400": 0.9998080237561207,
+      "median_map_correlation_vs_400": 0.9998512799706796,
+      "mean_map_mae_vs_400": 0.00012369931891953456,
+      "median_map_mae_vs_400": 0.00012776899893651716
+    },
+    {
+      "integration_steps": 400,
+      "n": 16,
+      "mean_abs_completeness_error": 0.06078894203528762,
+      "median_abs_completeness_error": 0.033994000405073166,
+      "mean_relative_completeness_error": 0.4239979119053337,
+      "median_relative_completeness_error": 0.19100175893369278,
+      "mean_map_correlation_vs_400": 1.0,
+      "median_map_correlation_vs_400": 1.0,
+      "mean_map_mae_vs_400": 0.0,
+      "median_map_mae_vs_400": 0.0
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "configuration": {
+    "starting_model": "models/resnet50v2_baseline/best_model.keras",
+    "image_size": 512,
+    "batch_size": 4,
+    "epochs_requested": 20,
+    "epochs_completed": 8,
+    "fine_tune_learning_rate": 1e-05,
+    "fine_tune_prefix": "conv5_",
+    "trainable_backbone_layers": 25,
+    "frozen_backbone_layers": 165,
+    "batch_normalization_frozen": true
+  },
+  "starting_validation": {
+    "accuracy": 0.6337719559669495,
+    "auc": 0.6715930104255676,
+    "loss": 0.6425230503082275,
+    "precision": 0.6180555820465088,
+    "recall": 0.4427860677242279
+  },
+  "final_validation": {
+    "accuracy": 0.6688596606254578,
+    "auc": 0.7233635783195496,
+    "loss": 0.6175824403762817,
+    "precision": 0.6168224215507507,
+    "recall": 0.6567164063453674
+  },
+  "test": {
+    "accuracy": 0.6387665271759033,
+    "auc": 0.6908717155456543,
+    "loss": 0.6439313888549805,
+    "precision": 0.5761904716491699,
+    "recall": 0.6173469424247742
+  }
+}

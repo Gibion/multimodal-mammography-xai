@@ -1,0 +1,32 @@
+{
+  "method": "Integrated Gradients",
+  "model": "models/resnet50v2_finetuned/best_model.keras",
+  "target": "malignancy sigmoid probability",
+  "classification_threshold": 0.5,
+  "baseline": {
+    "description": "black image in original RGB space",
+    "model_input_value": -1.0
+  },
+  "integration_steps": 200,
+  "integration_batch_size": 10,
+  "attribution_channel_collapse": "sum of positive channel attributions",
+  "mammograms_processed": 414,
+  "outcome_counts": {
+    "TN": 160,
+    "TP": 110,
+    "FP": 77,
+    "FN": 67
+  },
+  "maximum_prediction_difference": 5.632583618409015e-07,
+  "completeness": {
+    "mean_absolute_error": 0.08121255388402421,
+    "median_absolute_error": 0.06780660152435303,
+    "mean_relative_error": 2.01841131437242,
+    "median_relative_error": 0.28635204887108556
+  },
+  "heatmap_size": [
+    512,
+    512
+  ],
+  "elapsed_seconds": 140208.570663929
+}

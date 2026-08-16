@@ -1,0 +1,24 @@
+{
+  "method": "Grad-CAM++",
+  "model": "models/resnet50v2_finetuned/best_model.keras",
+  "backbone": "resnet50v2",
+  "target": "malignancy sigmoid probability",
+  "classification_threshold": 0.5,
+  "mammograms_processed": 414,
+  "outcome_counts": {
+    "TN": 160,
+    "TP": 110,
+    "FP": 77,
+    "FN": 67
+  },
+  "maximum_prediction_difference": 5.632583618409015e-07,
+  "heatmap_size": [
+    512,
+    512
+  ],
+  "raw_backbone_heatmap_size": [
+    16,
+    16
+  ],
+  "elapsed_seconds": 1898.8247978687286
+}

@@ -1,0 +1,87 @@
+
+========================================================================
+DISCRETISATION PILOT SUMMARY
+========================================================================
+
+Successful rows: 96 / 96
+
+Normalized ROI intensity summary:
+       normalized_roi_min  normalized_roi_max  normalized_roi_mean  normalized_roi_std
+count           96.000000           96.000000            96.000000           96.000000
+mean            66.282696          230.194513           150.217341           29.251671
+std             72.100629           87.782743            63.584924           23.040681
+min            -94.394155            7.499934           -40.827402            4.795273
+25%             32.267424          177.877788           106.316455           15.341903
+50%             78.502609          222.153742           149.491738           22.665220
+75%            110.831208          263.528397           199.517004           31.256943
+max            244.410417          565.667988           326.333267          133.639451
+
+Bin width = 2
+count     96.000000
+mean      80.958333
+std       46.951916
+min       19.000000
+25%       50.000000
+50%       68.500000
+75%       94.500000
+max      301.000000
+<16 bins: 0
+16-29 bins: 1
+30-130 bins: 82
+>130 bins: 13
+
+Bin width = 5
+count     96.000000
+mean      33.385417
+std       19.126928
+min        8.000000
+25%       21.000000
+50%       28.000000
+75%       40.000000
+max      122.000000
+<16 bins: 6
+16-29 bins: 43
+30-130 bins: 47
+>130 bins: 0
+
+Bin width = 10
+count    96.000000
+mean     17.333333
+std       9.698255
+min       4.000000
+25%      11.000000
+50%      15.000000
+75%      21.000000
+max      62.000000
+<16 bins: 50
+16-29 bins: 36
+30-130 bins: 10
+>130 bins: 0
+
+Bin counts by lesion type:
+
+Bin width = 2
+                  count       mean  median  min  max
+abnormality_type                                    
+calcification        48  91.145833    76.0   19  301
+mass                 48  70.770833    61.5   30  242
+
+Bin width = 5
+                  count       mean  median  min  max
+abnormality_type                                    
+calcification        48  37.354167    31.0    8  122
+mass                 48  29.416667    25.0   12   98
+
+Bin width = 10
+                  count       mean  median  min  max
+abnormality_type                                    
+calcification        48  19.291667    16.5    4   62
+mass                 48  15.375000    13.0    7   49
+
+Candidate comparison:
+ bin_width  median_bins  mean_bins  fraction_30_130
+       2.0         68.5  80.958333         0.854167
+       5.0         28.0  33.385417         0.489583
+      10.0         15.0  17.333333         0.104167
+
+Best pilot candidate by proportion in the 30-130 bin range: binWidth = 2

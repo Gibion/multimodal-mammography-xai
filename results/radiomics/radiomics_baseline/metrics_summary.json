@@ -1,0 +1,71 @@
+{
+  "model": "L1 logistic regression",
+  "feature_count": 28,
+  "regularisation_C": 0.42813323987193913,
+  "split_counts": {
+    "train": 2011,
+    "validation": 399,
+    "test": 414
+  },
+  "threshold_selection": {
+    "method": "validation maximum F1",
+    "selected_threshold": 0.31303232766390376,
+    "validation_f1": 0.6340508806262231
+  },
+  "validation_threshold_0_5": {
+    "threshold": 0.5,
+    "accuracy": 0.6340852130325815,
+    "roc_auc": 0.6670514004309018,
+    "average_precision": 0.6258264769249304,
+    "precision": 0.5827814569536424,
+    "recall_sensitivity": 0.5146198830409356,
+    "specificity": 0.7236842105263158,
+    "f1": 0.546583850931677,
+    "tn": 165,
+    "fp": 63,
+    "fn": 83,
+    "tp": 88
+  },
+  "validation_selected_threshold": {
+    "threshold": 0.31303232766390376,
+    "accuracy": 0.531328320802005,
+    "roc_auc": 0.6670514004309018,
+    "average_precision": 0.6258264769249304,
+    "precision": 0.4764705882352941,
+    "recall_sensitivity": 0.9473684210526315,
+    "specificity": 0.21929824561403508,
+    "f1": 0.6340508806262231,
+    "tn": 50,
+    "fp": 178,
+    "fn": 9,
+    "tp": 162
+  },
+  "test_threshold_0_5": {
+    "threshold": 0.5,
+    "accuracy": 0.6328502415458938,
+    "roc_auc": 0.6821139955660445,
+    "average_precision": 0.5987147632534784,
+    "precision": 0.5816993464052288,
+    "recall_sensitivity": 0.5028248587570622,
+    "specificity": 0.729957805907173,
+    "f1": 0.5393939393939394,
+    "tn": 173,
+    "fp": 64,
+    "fn": 88,
+    "tp": 89
+  },
+  "test_selected_threshold": {
+    "threshold": 0.31303232766390376,
+    "accuracy": 0.5434782608695652,
+    "roc_auc": 0.6821139955660445,
+    "average_precision": 0.5987147632534784,
+    "precision": 0.4822485207100592,
+    "recall_sensitivity": 0.9209039548022598,
+    "specificity": 0.2616033755274262,
+    "f1": 0.6330097087378641,
+    "tn": 62,
+    "fp": 175,
+    "fn": 14,
+    "tp": 163
+  }
+}
