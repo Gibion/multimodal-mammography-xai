@@ -13,6 +13,9 @@ venv/
 .venv/
 env/
 ENV/
+radiomics_venv/
+venv_python314_backup
+*_venv/
 
 # macOS
 .DS_Store
@@ -38,12 +41,22 @@ data/processed/cbis_ddsm/roi_masks/**
 # Keep manifest CSV files if desired
 #!data/processed/cbis_ddsm/manifests/
 #!data/processed/cbis_ddsm/manifests/*.csv
-src/data/processed/cbis_ddsm/manifests/**
-src/processed/cbis_ddsm/manifests/**
+src/preprocessing/data/processed/cbis_ddsm/manifests/**
+src/preprocessing/processed/cbis_ddsm/manifests/**
 
 # Ignore duplicate/generated manifest directories elsewhere
-src/data/processed/cbis_ddsm/manifests/**
-src/processed/cbis_ddsm/manifests/**
+src/preprocessing/data/processed/cbis_ddsm/manifests/**
+src/preprocessing/processed/cbis_ddsm/manifests/**
+
+#Remove files with paths on my personnal computer
+src/preprocessing/cbis_ddsm_resolved_manifest.csv
+src/preprocessing/cbis_ddsm_resolved_manifest_v2.csv
+src/preprocessing/dicom_classified_manifest.csv
+src/preprocessing/dicom_header_manifest.csv
+src/preprocessing/dicom_manifest.csv
+src/preprocessing/metadata_path_verification.csv
+
+src/preprocessing/processed/cbis_ddsm/manifests/**
 
 # Interim generated files
 data/interim/**

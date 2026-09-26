@@ -214,7 +214,7 @@ emit(f"\nSuccessful rows: {len(success):,} / {len(result):,}")
 emit("\nNormalized ROI intensity summary:")
 emit(success[
     ["normalized_roi_min", "normalized_roi_max",
-     "normalized_roi_mean", "normalized_roi_std"]
+    "normalized_roi_mean", "normalized_roi_std"]
 ].describe().to_string())
 
 candidate_rows = []
@@ -251,8 +251,8 @@ for width in BIN_WIDTHS:
     col = f"binwidth_{suffix}_n_bins"
     emit(f"\nBin width = {width:g}")
     emit(success.groupby("abnormality_type", observed=True)[col]
-         .agg(["count", "mean", "median", "min", "max"])
-         .to_string())
+        .agg(["count", "mean", "median", "min", "max"])
+        .to_string())
 
 emit("\nCandidate comparison:")
 candidate_df = pd.DataFrame(candidate_rows).sort_values(

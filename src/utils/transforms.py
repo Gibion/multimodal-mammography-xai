@@ -21,19 +21,3 @@ def get_preprocessing_transforms():
         transforms.RandomHorizontalFlip(),
         transforms.RandomRotation(10),
     ])
-
-# train_transforms = transforms.Compose([
-#     transforms.ToPILImage(),
-#     transforms.Resize((512, 512)), # resize all images to 512x512
-#     #transforms.RandomHorizontalFlip(p=0.5),
-#     transforms.RandomRotation(degrees=10),
-#     transforms.ColorJitter(brightness=0.1, contrast=0.1),
-#     transforms.ToTensor()
-# ])
-
-# val_transforms = transforms.Compose([
-#     transforms.ToPILImage(),
-#     transforms.Resize((512, 512)), # same size for validation
-#     transforms.ToTensor()
-# ])
-

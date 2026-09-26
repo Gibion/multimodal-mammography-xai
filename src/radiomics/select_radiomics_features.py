@@ -165,8 +165,8 @@ def save_correlation_heatmap(matrix, output_path, title):
         positions = np.arange(len(matrix))
         labels = [
             c.replace("original_", "")
-             .replace("_mean", " mean")
-             .replace("_max", " max")
+            .replace("_mean", " mean")
+            .replace("_max", " max")
             for c in matrix.columns
         ]
         plt.xticks(positions, labels, rotation=90, fontsize=6)
@@ -490,8 +490,8 @@ fig = plt.figure(
 
 labels = [
     value.replace("original_", "")
-         .replace("_mean", " mean")
-         .replace("_max", " max")
+        .replace("_mean", " mean")
+        .replace("_max", " max")
     for value in figure_features["feature"]
 ]
 

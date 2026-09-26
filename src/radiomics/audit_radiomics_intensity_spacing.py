@@ -247,14 +247,7 @@ for bits, group in success.groupby("BitsAllocated"):
     )
 
 show("\n" + "=" * 72)
-show("WHAT TO SEND BACK")
 show("=" * 72)
-show(
-    "\nPlease send the sections for BitsAllocated, pixel_max, "
-    "pixel_p99, PixelSpacing, ImagerPixelSpacing, "
-    "NominalScannedPixelSpacing, and the intensity statistics "
-    "by BitsAllocated."
-)
 
 SUMMARY_TXT.parent.mkdir(parents=True, exist_ok=True)
 SUMMARY_TXT.write_text("\n".join(lines), encoding="utf-8")
