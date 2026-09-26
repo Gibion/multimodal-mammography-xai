@@ -1882,7 +1882,7 @@ def boxplot_metric(
 
     plt.boxplot(
         data,
-        labels=method_order,
+        tick_labels=method_order,
         showfliers=False,
     )
 

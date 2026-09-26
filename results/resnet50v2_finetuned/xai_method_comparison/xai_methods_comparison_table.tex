@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+    \centering
+    \caption{Localisation performance of Grad-CAM, Grad-CAM++ and
+    Integrated Gradients on the matched 414-mammogram test cohort.}
+    \label{tab:rq2_xai_method_comparison}
+    \begin{tabular}{lrrrr}
+        \toprule
+        Method &
+        Pointing-game (\%) &
+        Median ROI energy (\%) &
+        Median activation ratio &
+        Median IoU top 10\% (\%) \\
+        \midrule
+        Grad-CAM & 3.9 & 0.056 & 0.278 & 0.000 \\
+        Grad-CAM++ & 3.6 & 0.529 & 2.477 & 0.680 \\
+        Integrated Gradients & 13.8 & 1.500 & 6.740 & 1.134 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

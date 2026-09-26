@@ -1,0 +1,269 @@
+{
+  "matched_test_mammograms": 414,
+  "methods": [
+    "Grad-CAM",
+    "Grad-CAM++",
+    "Integrated Gradients"
+  ],
+  "integrated_gradients_steps": 200,
+  "roi_size_thresholds": {
+    "q25": 0.0013637542724609375,
+    "q75": 0.0048923492431640625
+  },
+  "bootstrap_replicates": 5000,
+  "overall_summary": [
+    {
+      "method": "Grad-CAM",
+      "n": 414,
+      "pointing_game_accuracy": 0.03864734299516908,
+      "mean_energy_inside_roi": 0.015984812535001194,
+      "median_energy_inside_roi": 0.00055896316547685,
+      "mean_activation_ratio": 2.3600616556705334,
+      "median_activation_ratio": 0.27831144506986194,
+      "mean_iou_top_10": 0.015945017971916532,
+      "median_iou_top_10": 0.0,
+      "mean_iou_top_20": 0.010949457034763188,
+      "median_iou_top_20": 3.789781103920971e-05,
+      "mean_iou_top_30": 0.008133888010112045,
+      "median_iou_top_30": 0.0008230244312981
+    },
+    {
+      "method": "Grad-CAM++",
+      "n": 414,
+      "pointing_game_accuracy": 0.036231884057971016,
+      "mean_energy_inside_roi": 0.020173997722943638,
+      "median_energy_inside_roi": 0.0052875445036432815,
+      "mean_activation_ratio": 3.1838316011529346,
+      "median_activation_ratio": 2.4767307662783455,
+      "mean_iou_top_10": 0.024874717997953676,
+      "median_iou_top_10": 0.006795934167926042,
+      "mean_iou_top_20": 0.0200771358965886,
+      "median_iou_top_20": 0.007466886745791497,
+      "mean_iou_top_30": 0.016387139380034856,
+      "median_iou_top_30": 0.006637590122452093
+    },
+    {
+      "method": "Integrated Gradients",
+      "n": 414,
+      "pointing_game_accuracy": 0.13768115942028986,
+      "mean_energy_inside_roi": 0.046815663410966046,
+      "median_energy_inside_roi": 0.014999682733383179,
+      "mean_activation_ratio": 8.557416308859517,
+      "median_activation_ratio": 6.739700255335178,
+      "mean_iou_top_10": 0.024480167096783637,
+      "median_iou_top_10": 0.011335769602131271,
+      "mean_iou_top_20": 0.007760463801478643,
+      "median_iou_top_20": 0.0033626556396484375,
+      "mean_iou_top_30": 0.006019132702538671,
+      "median_iou_top_30": 0.0024662017822265625
+    }
+  ],
+  "bootstrap_intervals": [
+    {
+      "method": "Grad-CAM",
+      "metric": "pointing_game_accuracy",
+      "point_estimate": 0.03864734299516908,
+      "ci_low": 0.021739130434782608,
+      "ci_high": 0.057971014492753624
+    },
+    {
+      "method": "Grad-CAM",
+      "metric": "median_energy_inside_roi",
+      "point_estimate": 0.00055896316547685,
+      "ci_low": 0.00031518347923605,
+      "ci_high": 0.0010111093571108
+    },
+    {
+      "method": "Grad-CAM",
+      "metric": "median_activation_ratio",
+      "point_estimate": 0.27831144506986194,
+      "ci_low": 0.15219423145327465,
+      "ci_high": 0.49218870804208603
+    },
+    {
+      "method": "Grad-CAM",
+      "metric": "median_iou_top_10",
+      "point_estimate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    {
+      "method": "Grad-CAM++",
+      "metric": "pointing_game_accuracy",
+      "point_estimate": 0.036231884057971016,
+      "ci_low": 0.01932367149758454,
+      "ci_high": 0.05555555555555555
+    },
+    {
+      "method": "Grad-CAM++",
+      "metric": "median_energy_inside_roi",
+      "point_estimate": 0.0052875445036432815,
+      "ci_low": 0.00441112276895461,
+      "ci_high": 0.006582582232713166
+    },
+    {
+      "method": "Grad-CAM++",
+      "metric": "median_activation_ratio",
+      "point_estimate": 2.4767307662783455,
+      "ci_low": 2.181892234826835,
+      "ci_high": 2.6984999939949175
+    },
+    {
+      "method": "Grad-CAM++",
+      "metric": "median_iou_top_10",
+      "point_estimate": 0.006795934167926042,
+      "ci_low": 0.0034206147560428887,
+      "ci_high": 0.008973621944144288
+    },
+    {
+      "method": "Integrated Gradients",
+      "metric": "pointing_game_accuracy",
+      "point_estimate": 0.13768115942028986,
+      "ci_low": 0.10628019323671498,
+      "ci_high": 0.17149758454106281
+    },
+    {
+      "method": "Integrated Gradients",
+      "metric": "median_energy_inside_roi",
+      "point_estimate": 0.014999682733383179,
+      "ci_low": 0.013561677902756565,
+      "ci_high": 0.016908153851983743
+    },
+    {
+      "method": "Integrated Gradients",
+      "metric": "median_activation_ratio",
+      "point_estimate": 6.739700255335178,
+      "ci_low": 6.229420237528309,
+      "ci_high": 7.266170300578107
+    },
+    {
+      "method": "Integrated Gradients",
+      "metric": "median_iou_top_10",
+      "point_estimate": 0.011335769602131271,
+      "ci_low": 0.010193679918450561,
+      "ci_high": 0.013095362188501505
+    }
+  ],
+  "bootstrap_pairwise_differences": [
+    {
+      "comparison": "Grad-CAM++ - Grad-CAM",
+      "method_a": "Grad-CAM++",
+      "method_b": "Grad-CAM",
+      "metric": "pointing_game_accuracy",
+      "difference": -0.0024154589371980645,
+      "ci_low": -0.021739130434782608,
+      "ci_high": 0.016908212560386472,
+      "bootstrap_p": 0.902619476104779
+    },
+    {
+      "comparison": "Grad-CAM++ - Grad-CAM",
+      "method_a": "Grad-CAM++",
+      "method_b": "Grad-CAM",
+      "metric": "median_energy_inside_roi",
+      "difference": 0.004728581338166431,
+      "ci_low": 0.003820503762080343,
+      "ci_high": 0.005932439536331285,
+      "bootstrap_p": 0.0003999200159968006
+    },
+    {
+      "comparison": "Grad-CAM++ - Grad-CAM",
+      "method_a": "Grad-CAM++",
+      "method_b": "Grad-CAM",
+      "metric": "median_activation_ratio",
+      "difference": 2.1984193212084837,
+      "ci_low": 1.9181302765271782,
+      "ci_high": 2.4286348765672043,
+      "bootstrap_p": 0.0003999200159968006
+    },
+    {
+      "comparison": "Grad-CAM++ - Grad-CAM",
+      "method_a": "Grad-CAM++",
+      "method_b": "Grad-CAM",
+      "metric": "median_iou_top_10",
+      "difference": 0.006795934167926042,
+      "ci_low": 0.0034206147560428887,
+      "ci_high": 0.008973621944144288,
+      "bootstrap_p": 0.0003999200159968006
+    },
+    {
+      "comparison": "Integrated Gradients - Grad-CAM",
+      "method_a": "Integrated Gradients",
+      "method_b": "Grad-CAM",
+      "metric": "pointing_game_accuracy",
+      "difference": 0.09903381642512077,
+      "ci_low": 0.06521739130434782,
+      "ci_high": 0.13285024154589373,
+      "bootstrap_p": 0.0003999200159968006
+    },
+    {
+      "comparison": "Integrated Gradients - Grad-CAM",
+      "method_a": "Integrated Gradients",
+      "method_b": "Grad-CAM",
+      "metric": "median_energy_inside_roi",
+      "difference": 0.014440719567906329,
+      "ci_low": 0.012967642680881958,
+      "ci_high": 0.01629728578835407,
+      "bootstrap_p": 0.0003999200159968006
+    },
+    {
+      "comparison": "Integrated Gradients - Grad-CAM",
+      "method_a": "Integrated Gradients",
+      "method_b": "Grad-CAM",
+      "metric": "median_activation_ratio",
+      "difference": 6.461388810265316,
+      "ci_low": 5.947706429709381,
+      "ci_high": 6.979782508799016,
+      "bootstrap_p": 0.0003999200159968006
+    },
+    {
+      "comparison": "Integrated Gradients - Grad-CAM",
+      "method_a": "Integrated Gradients",
+      "method_b": "Grad-CAM",
+      "metric": "median_iou_top_10",
+      "difference": 0.011335769602131271,
+      "ci_low": 0.010193679918450561,
+      "ci_high": 0.013095362188501505,
+      "bootstrap_p": 0.0003999200159968006
+    },
+    {
+      "comparison": "Integrated Gradients - Grad-CAM++",
+      "method_a": "Integrated Gradients",
+      "method_b": "Grad-CAM++",
+      "metric": "pointing_game_accuracy",
+      "difference": 0.10144927536231885,
+      "ci_low": 0.07004830917874397,
+      "ci_high": 0.13526570048309178,
+      "bootstrap_p": 0.0003999200159968006
+    },
+    {
+      "comparison": "Integrated Gradients - Grad-CAM++",
+      "method_a": "Integrated Gradients",
+      "method_b": "Grad-CAM++",
+      "metric": "median_energy_inside_roi",
+      "difference": 0.009712138229739898,
+      "ci_low": 0.008322032639359182,
+      "ci_high": 0.011134466497834122,
+      "bootstrap_p": 0.0003999200159968006
+    },
+    {
+      "comparison": "Integrated Gradients - Grad-CAM++",
+      "method_a": "Integrated Gradients",
+      "method_b": "Grad-CAM++",
+      "metric": "median_activation_ratio",
+      "difference": 4.262969489056832,
+      "ci_low": 3.7875448290830063,
+      "ci_high": 4.788340982650472,
+      "bootstrap_p": 0.0003999200159968006
+    },
+    {
+      "comparison": "Integrated Gradients - Grad-CAM++",
+      "method_a": "Integrated Gradients",
+      "method_b": "Grad-CAM++",
+      "metric": "median_iou_top_10",
+      "difference": 0.004539835434205229,
+      "ci_low": 0.002308790183636241,
+      "ci_high": 0.007550918478367666,
+      "bootstrap_p": 0.0003999200159968006
+    }
+  ]
+}

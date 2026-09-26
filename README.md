@@ -2,7 +2,7 @@
 
 An explainable multimodal breast-cancer classification project using the **CBIS-DDSM** mammography dataset.
 
-The project is being developed for the University of London CM3070 Final Project. The planned system combines:
+The project is was developed for the University of London CM3070 Final Project. The planned system combines:
 
 - a convolutional neural network (CNN) branch for full mammograms;
 - radiomics features extracted from annotated lesions;
@@ -15,21 +15,21 @@ The current implementation has completed the main **CBIS-DDSM data preparation, 
 
 The CBIS-DDSM download was first verified using `metadata.csv`.
 
-| Processing stage | Result |
-|---|---:|
-| Metadata records | 6,775 |
-| Valid metadata directories | 6,775 / 6,775 |
-| DICOM files discovered | 10,239 |
-| Case-description rows | 3,568 |
-| Full mammograms resolved | 3,568 / 3,568 |
-| Cropped images resolved | 3,568 / 3,568 |
-| ROI masks resolved | 3,248 / 3,568 |
-| Ambiguous final matches | 0 |
+| Processing stage                           | Result |
+|--------------------------------------------|--------:|
+| Metadata records                           | 6,775  |
+| Valid metadata directories                 | 6,775 / 6,775 |
+| DICOM files discovered                     | 10,239 |
+| Case-description rows                      | 3,568 |
+| Full mammograms resolved                   | 3,568 / 3,568 |
+| Cropped images resolved                    | 3,568 / 3,568 |
+| ROI masks resolved                         | 3,248 / 3,568 |
+| Ambiguous final matches                    | 0 |
 | Reversed crop/ROI CSV references corrected | 1 |
-| Unique full mammograms | 3,103 |
-| Unique participants | 1,566 |
-| Benign full mammograms | 1,728 |
-| Malignant full mammograms | 1,375 |
+| Unique full mammograms                     | 3,103 |
+| Unique participants                        | 1,566 |
+| Benign full mammograms                     | 1,728 |
+| Malignant full mammograms                  | 1,375 |
 
 The 320 unavailable ROI masks are all from the calcification test subset.
 
@@ -46,12 +46,12 @@ The original CBIS-DDSM mass and calcification train/test files are individually 
 
 A new patient-disjoint split was therefore created for the combined full-mammogram experiment.
 
-| Split | Participants | Images | Benign | Malignant |
-|---|---:|---:|---:|---:|
-| Train | 1,096 | 2,193 | 1,215 | 978 |
-| Validation | 235 | 456 | 255 | 201 |
-| Test | 235 | 454 | 258 | 196 |
-| **Total** | **1,566** | **3,103** | **1,728** | **1,375** |
+| Split      | Participants | Images    | Benign    | Malignant |
+|------------|-------------:|----------:|----------:|----------:|
+| Train      | 1,096        | 2,193     | 1,215     | 978       |
+| Validation | 235          | 456       | 255       | 201       |
+| Test       | 235          | 454       | 258       | 196       |
+| **Total**  | **1,566**    | **3,103** | **1,728** | **1,375** |
 
 There is zero participant overlap between the three new splits.
 
@@ -68,7 +68,7 @@ multimodal-mammography-xai/
 │   ├── raw/                    # not tracked by Git
 │   │   └── cbis_ddsm/
 │   ├── interim/                # generated manifests / intermediate files
-│   └── processed/              # converted images; normally not tracked
+│   └── processed/              # converted images; not tracked
 │       └── cbis_ddsm/
 │           ├── full_mammograms/
 │           ├── cropped/
@@ -89,10 +89,17 @@ multimodal-mammography-xai/
 │   │   └── create_patient_disjoint_split.py
 │   │
 │   ├── models/
+│   │   ├── test_resnet50v2_input_pipeline.py
 │   ├── radiomics/
+│   │   ├── fusion.py
 │   ├── fusion/
+│   │   ├── fusion.py
 │   ├── xai/
+│   │   ├── 
 │   └── utils/
+│   │   ├── dataset.py
+│   │   ├── gradcam.py
+│   │   ├── transforms.py
 │
 ├── notebooks/
 │   ├── exploration/
@@ -106,6 +113,7 @@ multimodal-mammography-xai/
 │   └── xai/
 │
 ├── tests/
+│   │   ├── test_preprocessing.py
 └── docs/
     └── report/
 ```
@@ -276,10 +284,12 @@ Large files should not be committed directly. In particular, exclude:
 - TensorBoard logs;
 - cache files.
 
-If selected model checkpoints are later needed for release, use Git LFS or a separate release artifact.
-
 ## License and dataset attribution
 
 The source code in this repository is covered by the repository `LICENSE`.
 
 CBIS-DDSM is a separate third-party dataset and remains subject to its own terms and attribution requirements. The dataset itself is not redistributed in this repository.
+
+Data Citation:
+
+Sawyer-Lee, R., Gimenez, F., Hoogi, A., & Rubin, D. (2016). Curated Breast Imaging Subset of Digital Database for Screening Mammography (CBIS-DDSM) [Data set]. The Cancer Imaging Archive. https://doi.org/10.7937/K9/TCIA.2016.7O02S9CY
