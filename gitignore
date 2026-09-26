@@ -36,8 +36,14 @@ data/processed/cbis_ddsm/cropped/**
 data/processed/cbis_ddsm/roi_masks/**
 
 # Keep manifest CSV files if desired
-!data/processed/cbis_ddsm/manifests/
-!data/processed/cbis_ddsm/manifests/*.csv
+#!data/processed/cbis_ddsm/manifests/
+#!data/processed/cbis_ddsm/manifests/*.csv
+src/data/processed/cbis_ddsm/manifests/**
+src/processed/cbis_ddsm/manifests/**
+
+# Ignore duplicate/generated manifest directories elsewhere
+src/data/processed/cbis_ddsm/manifests/**
+src/processed/cbis_ddsm/manifests/**
 
 # Interim generated files
 data/interim/**
